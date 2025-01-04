@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <div>
+        <!-- <form action=""> tag ma action ae backend devlopement mat vaprai che. ke ahi purvama avel infomation kya jashe ? vathu jankari backend devlopement ma joshi. -->
+        <form action="form.php">
+            <h1>School Reunione Form</h1><br><hr>
+            <p>Details:</p>
+            <!-- <input type="text" placeholder=""> atribut ma apde je lakhashi te bidyfolt tya lakhelu avshe jenathi foem lakhanar ne clarety rahe... -->
+            Name : <input type="text" placeholder="Enter Your Name" name="detail"><br>
+            Email : <input type="email" name="derail" id="email" placeholder="Enter Your Email"><br>
+            <!-- radio tag ma apde option pasand kari shakia chi. -->
+
+            <!-- <label for=""> tag ek id ne alag rakhava vapri che. -->
+
+            <label for="Ganderidm">
+                <!-- <input type="radio"> tag ma mainly 3 atribut hoi che  -->
+                <!-- 1.) value >>>> tma te radio ni value lakhava ma ave che. te darek radio ni alag alag hoi che. ex. >> Male , Female , Other -->
+                <!-- 2.) name >>>> ak tast ma rahela bhadha radio nu name sarkhu hoi che. ke jethi form fill karnar tmathi ak nej pasand kari shake. ex. >> Gander -->
+                <!-- 3.) id >>>> id darek radio ni alag alag hoi che. koi pan sanjoge 2 radio ni id same na hoi shake . ane jo hashe to form fill karti vakhate bane ne ak sathe clik kari shakashe. ex. >> Ganderidm , Ganderidf , Ganderido -->
+                <!-- exampal -->
+                <input type="radio" value="Male" name="Gander" id="Ganderidm"> Male
+            </label>
+            <!-- label ma for ane input ni id same hovi joiae -->
+            <!-- <label for="Ganderidf"> === id="Ganderidf" -->
+            <label for="Ganderidf">
+                <input type="radio" value="Female" name="Gander" id="Ganderidf"> Female
+            </label>
+            <label for="Ganderido">
+                <input type="radio" value="Other" name="Gander" id="Ganderido"> Other
+            </label><br>
+            <hr>
+            <!-- ab darek elemant ni ek unique id hoi che je te elemant ne track karva vaprai charset -->
+            <p>Can you come to school at 4<sup>th</sup> June, 2025 ?</p>
+            <!-- label teni andera rahel text ke elemants ne clikabel banavshe for ma raheli id mate -->
+            <label for="Conformation1">
+                <input type="checkbox" name="Conformation" id="Conformation1">Yes, I come.
+            </label>
+            <label for="Conformation3">
+                <input type="checkbox" name="Conformation" id="Conformation3">No, I join online.
+            </label>
+            <label for="Conformation2">
+                <input type="checkbox" name="Conformation" id="Conformation2">I am not sure.
+            </label><br><hr>
+            <p>Your gradiation year :</p>
+            <input type="date" name="gradiation" id="year">
+            <p>Uplode your gradiation Certificat : </p>
+            <input type="file" name="gradiation" id="Certificat"><br><hr>
+            <p>How you come?</p>
+            <select name="come" id="come">
+                <option value="None">None</option>
+                <option value="Train">Train</option>
+                <option value="Bus">Bus</option>
+                <option value="Air">Air</option>
+                <option value="Car">Car</option>
+            </select><br><hr>
+            <!-- form fill karnar pase thi koi explaination jotu hi tyare kam ave che. -->
+            <textarea name="Comment" id="Comment" class="Comment" cols="50" rows="10" placeholder="Tell me if you have any quastion..."></textarea>
+            <input type="button" value="Send" id="Comment" class="Comment">
+        </form>
+    </div>
+</body>
+
+</html>
